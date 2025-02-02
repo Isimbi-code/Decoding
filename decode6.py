@@ -4,7 +4,7 @@ import numpy as np
 
 reader = zxing.BarCodeReader()
 
-image_path = "image2.jpg"
+image_path = "image6.png"
 image = cv2.imread(image_path)
 
 if image is None:
@@ -35,7 +35,7 @@ else:
             print("Error: Failed to save the output file.")
 
         cv2.imshow("MaxiCode with Annotation", image)
-        cv2.waitKey(3000)  # Wait for 3 seconds
+        cv2.waitKey(3000)  
         cv2.destroyAllWindows()
     else:
         print("Failed to decode the MaxiCode.")
